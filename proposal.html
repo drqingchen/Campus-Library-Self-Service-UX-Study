@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>校园图书馆自助服务系统用户体验研究项目提案</title>
+  <meta name="description" content="校园图书馆自助服务系统用户体验研究项目提案">
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#0f1530;
+      --muted:#9fb3c8;
+      --text:#e7eef7;
+      --accent:#5aa9ff;
+      --accent-2:#99d1ff;
+      --border:rgba(255,255,255,.09);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font:16px/1.6 -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+      color:var(--text);
+      background:radial-gradient(1200px 800px at 80% -20%,#162047 0%,transparent 60%),linear-gradient(180deg,#0b1020 0%,#0a0e1c 100%);
+      letter-spacing:.2px;
+    }
+    .wrap{max-width:980px;margin:0 auto;padding:48px 20px 64px}
+    header{
+      display:flex;gap:20px;align-items:center;justify-content:space-between;margin-bottom:28px
+    }
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{
+      width:44px;height:44px;border-radius:10px;
+      background:
+        radial-gradient(14px 14px at 70% 30%, rgba(255,255,255,.18), transparent 60%),
+        linear-gradient(135deg,#1a56ff 0%,#2db4ff 100%);
+      box-shadow:0 6px 22px rgba(90,169,255,.35), inset 0 0 0 1px rgba(255,255,255,.18);
+    }
+    h1{font-size:26px;line-height:1.25;margin:0}
+    .meta{color:var(--muted);font-size:14px;margin-top:4px}
+    .tag{
+      display:inline-flex;gap:8px;align-items:center;
+      border:1px solid var(--border);border-radius:999px;padding:6px 12px;
+      background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));
+      color:#cfe6ff;font-weight:600;text-decoration:none
+    }
+    .grid{
+      display:grid;gap:14px;grid-template-columns:repeat(4,1fr);margin:22px 0 30px
+    }
+    @media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:560px){.grid{grid-template-columns:1fr}}
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));
+      border:1px solid var(--border);border-radius:14px;padding:16px 16px 14px;
+      box-shadow:0 8px 30px rgba(0,0,0,.25)
+    }
+    .card h3{margin:0 0 6px;font-size:14px;color:#b9d7ff;font-weight:600;letter-spacing:.3px}
+    .card p{margin:0;font-size:15px}
+    section{
+      border:1px solid var(--border);border-radius:16px;padding:18px 18px 6px;margin:16px 0 18px;
+      background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));
+      box-shadow:0 12px 36px rgba(0,0,0,.24)
+    }
+    section h2{
+      margin:0 0 6px;font-size:18px;display:flex;align-items:center;gap:10px;color:#d9eaff
+    }
+    section h2::before{
+      content:"";width:8px;height:18px;border-radius:2px;
+      background:linear-gradient(180deg,var(--accent),var(--accent-2));
+      box-shadow:0 0 0 1px rgba(255,255,255,.15)
+    }
+    ul{margin:8px 0 12px 22px;padding:0}
+    li{margin:4px 0}
+    .inline-kpis{
+      display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 6px
+    }
+    .pill{
+      font-size:13px;color:#d9ecff;border:1px solid var(--border);
+      background:linear-gradient(180deg,rgba(153,209,255,.15),rgba(153,209,255,.05));
+      padding:6px 10px;border-radius:999px
+    }
+    .muted{color:var(--muted)}
+    .center{display:flex;justify-content:center;margin-top:20px}
+    .hr{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.16),transparent);margin:16px 0}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>校园图书馆自助服务系统用户体验研究项目提案</h1>
+          <div class="meta">小组：交互队</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Executive snapshot -->
+    <div class="grid" role="group" aria-label="项目快照">
+      <div class="card">
+        <h3>研究目标</h3>
+        <p>识别使用痛点与核心需求，提出高影响、可落地的系统优化建议与优先级路线图。</p>
+      </div>
+      <div class="card">
+        <h3>研究范围</h3>
+        <p>使用差异；痛点定位；优化优先级；信任机制</p>
+      </div>
+      <div class="card">
+        <h3>方法与样本</h3>
+        <p>半结构化访谈；结构化问卷。</p>
+      </div>
+      <div class="card">
+        <h3>关键维度</h3>
+        <p>安全与隐私、系统操作、系统衔接、个性化需求与总体满意度/复用意愿。</p>
+      </div>
+    </div>
+
+    <section id="overview">
+      <h2>1. 项目概要</h2>
+      <ul>
+        - 名称：校园图书馆自助服务系统用户体验研究<br>
+        - 目的：围绕“使用习惯与情境—痛点与需求—改进与期望”形成证据化洞察，驱动产品优化。
+      </ul>
+      <div class="inline-kpis">
+        <span class="pill">范围：馆内自助借还/缴费/查询及与线上服务的衔接</span>
+        <span class="pill">对象：本科生/研究生/博士生</span>
+      </div>
+    </section>
+
+    <section id="goals">
+      <h2>2. 研究目标与预期成果</h2>
+      <ul>
+        <li>量化界面直观性、流程效率、容错引导、硬件交互与安全感。</li>
+        <li>凝练短中期优化清单与优先级（结合影响力 × 成本）。</li>
+        <li>输出可落地的服务蓝图与关键界面低保真方案。</li>
+      </ul>
+      <div class="inline-kpis">
+        <span class="pill">报告 + 路线图</span>
+        <span class="pill">用户旅程地图</span>
+        <span class="pill">服务蓝图</span>
+        <span class="pill">低保真原型</span>
+      </div>
+    </section>
+
+    <section id="rq">
+      <h2>3. 研究范围与问题</h2>
+      <ul>
+        <li>使用差异：不同人群在操作路径与偏好上的显著差异是什么？</li>
+        <li>痛点定位：界面/流程/硬件/等待/衔接/安全感中，哪些触点影响最大？</li>
+        <li>优化优先级：哪些功能/设计改动最能提升满意度与复用意愿？</li>
+        <li>信任机制：隐私控制感与支付安全感如何影响使用意愿？</li>
+      </ul>
+    </section>
+
+    <section id="method">
+      <h2>4. 方法与样本计划</h2>
+      <ul>
+        <li>质性：半结构化访谈（20–30 分钟/人），主题为使用情境、痛点、改进期望。</li>
+        <li>量化：结构化问卷（单选、量表、开放题），覆盖安全与隐私、系统操作、系统需求。</li>
+        <li>招募：馆内访谈与群聊推送，问卷结尾引导访谈报名，提供小额激励。</li>
+      </ul>
+      <div class="inline-kpis">
+        <span class="pill">工具：问卷星</span>
+      </div>
+    </section>
+
+    <section id="measures">
+      <h2>5. 测量维度与关键指标</h2>
+      <ul>
+        <li>安全与隐私：隐私控制感、支付安全感、会话安全（退出/超时）。</li>
+        <li>系统操作：界面直观性、流程步骤负担、容错提示、硬件识别速度与准确性。</li>
+        <li>系统衔接：与官网/APP/小程序/预约/座位系统的无缝度（例如预约到机取书）。</li>
+        <li>结果变量：总体满意度、复用/推荐意愿、求助率、错误率与任务时长。</li>
+      </ul>
+    </section>
+
+    <section id="ethics">
+      <h2>6. 伦理与隐私</h2>
+      <ul>
+        <li>最小化收集：不采集实名敏感信息；联系方式单独加密存储并限期删除。</li>
+        <li>知情同意：明确研究用途、可随时跳过或退出，不影响任何权益。</li>
+        <li>数据安全：仅研究组可见，匿名化处理，保存期限建议 12 个月。</li>
+      </ul>
+    </section>
+
+    <section id="risks">
+      <h2>7. 风险与应对</h2>
+      <ul>
+        <li>样本偏差 → 分层配额与滚动监控；必要时增补教师/研究生占比。</li>
+        <li>回收不足 → 多渠道触达与激励；设置问卷逻辑与时长阈值控质。</li>
+        <li>访谈不饱和 → 适度扩样直至主题饱和。</li>
+        <li>高峰期干扰 → 错峰或独立安静空间；必要时现场观察辅助。</li>
+      </ul>
+    </section>
+
+    <div class="center">
+      <a class="tag" href="index.html">← 返回首页</a>
+    </div>
+  </div>
+</body>
+</html>
